@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M U Sajan Kumaran | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Using FontAwesome via CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Full Screen Loader -->
+    <div id="loader" class="loader">
+        <div class="orbit">
+            <div class="orbit-shape"></div>
+            <div class="orbit-shape delay-1"></div>
+            <div class="orbit-shape delay-2"></div>
+        </div>
+    </div>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="blob blob-1" data-speed="2.5"></div>
+    <div class="blob blob-2" data-speed="1.8"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Sajan<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero fade-in">
+            <div class="hero-content" data-speed="-1.2">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">M U Sajan <span class="gradient-text">Kumaran</span></h1>
+                <h2 class="role">Computer Science Student & Security Enthusiast</h2>
+                <div class="hero-contact">
+                    <a href="mailto:musajankumaran@gmail.com" class="btn btn-primary"><i
+                            class="fa-solid fa-envelope"></i> Email Me</a>
+                    <a href="https://www.linkedin.com/in/sajankumaran-mu-867314311" target="_blank"
+                        class="btn btn-secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <span class="location"><i class="fa-solid fa-location-dot"></i> Chennai, 600071</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="fade-in">
+            <div class="container section-container">
+                <h2 class="section-title">01. <span class="gradient-text">Objective</span></h2>
+                <div class="glass-card about-card card-spotlight">
+                    <p>I am a dedicated and motivated Computer Science student with a solid academic background and
+                        hands-on experience in web development and cybersecurity. I aim to leverage my technical skills
+                        and analytical mindset in a professional role while contributing to innovative projects in a
+                        dynamic environment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="fade-in">
+            <div class="container section-container">
+                <h2 class="section-title">02. <span class="gradient-text">Experience</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content card-spotlight">
+                            <span class="date">12/2025 - 03/2026</span>
+                            <div class="timeline-header">
+                                <h3>Student Intern</h3>
+                                <h4>Edu Tantr • Bangalore, Karnataka</h4>
+                            </div>
+                            <p class="company-desc">An ed-tech company focusing on cybersecurity education.</p>
+                            <ul class="task-list">
+                                <li>Assisted in monitoring network activity and identifying potential system
+                                    vulnerabilities.</li>
+                                <li>Gained hands-on experience with tools like Wireshark and Nmap.</li>
+                                <li>Learned basic concepts of network security and threat detection.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content card-spotlight">
+                            <span class="date">06/2025 - 06/2025</span>
+                            <div class="timeline-header">
+                                <h3>Student Intern</h3>
+                                <h4>CodeBind Technologies • Chennai, Tamil Nadu</h4>
+                            </div>
+                            <p class="company-desc">A technology company focused on web development.</p>
+                            <ul class="task-list">
+                                <li>Learned the fundamentals of web development and developed simple responsive web
+                                    pages.</li>
+                                <li>Gained hands-on experience with HTML and CSS.</li>
+                                <li>Assisted in improving website layouts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="fade-in">
+            <div class="container section-container">
+                <h2 class="section-title">03. <span class="gradient-text">Education</span></h2>
+                <div class="grid-cards">
+                    <div class="glass-card edu-card card-spotlight">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>Bachelor of Engineering in CS</h3>
+                        <h4>Panimalar Engineering College</h4>
+                        <p class="duration">09/2024 - 10/2028 | Chennai, Tamil Nadu</p>
+                        <div class="score"><i class="fa-solid fa-check"></i> CGPA : 8.0/10</div>
+                    </div>
+                    <div class="glass-card edu-card card-spotlight">
+                        <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                        <h3>Higher Secondary Education</h3>
+                        <h4>Velammal Vidyalaya</h4>
+                        <p class="duration">06/2023 - 05/2024 | Chennai, Tamil Nadu</p>
+                        <div class="score"><i class="fa-solid fa-check"></i> Percentage : 75%</div>
+                    </div>
+                    <div class="glass-card edu-card card-spotlight">
+                        <div class="edu-icon"><i class="fa-solid fa-book"></i></div>
+                        <h3>Secondary Education</h3>
+                        <h4>Sudharsanam Vidyaasharam</h4>
+                        <p class="duration">06/2021 - 05/2022 | Chennai, Tamil Nadu</p>
+                        <div class="score"><i class="fa-solid fa-check"></i> Percentage : 75%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="fade-in">
+            <div class="container section-container">
+                <h2 class="section-title">04. <span class="gradient-text">Skills</span></h2>
+                <div class="skills-wrapper">
+                    <div class="skill-category glass-card card-spotlight">
+                        <h3><i class="fa-solid fa-code"></i> Programming</h3>
+                        <div class="skill-tags">
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>C</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card card-spotlight">
+                        <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                        <div class="skill-tags">
+                            <span>SQL</span>
+                            <span>MySQL</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card card-spotlight">
+                        <h3><i class="fa-solid fa-shield-halved"></i> Cybersecurity</h3>
+                        <div class="skill-tags">
+                            <span>Footprinting</span>
+                            <span>Steganography</span>
+                            <span>Phishing</span>
+                            <span>SQL Injection</span>
+                            <span>John The Ripper</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="fade-in">
+            <div class="container section-container">
+                <h2 class="section-title">05. <span class="gradient-text">Projects</span></h2>
+                <div class="project-cards">
+                    <div class="glass-card project-card card-spotlight">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <i class="fa-regular fa-folder-open folder-icon"></i>
+                                <span class="project-date">12/2024 - 01/2025</span>
+                            </div>
+                            <h3 class="project-title">Image Steganography for Secure Data Hiding</h3>
+                            <p class="project-location"><i class="fa-solid fa-location-dot"></i> Chennai, India</p>
+                            <div class="project-details">
+                                <p>Developed a steganography system to securely hide confidential text messages inside
+                                    digital images.</p>
+                                <ul>
+                                    <li>Utilized the Least Significant Bit (LSB) technique to embed secret data into
+                                        image pixels without visibly altering the image.</li>
+                                    <li>Implemented a robust decoding process to safely extract the hidden information.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Designed & Built by M U Sajan Kumaran</p>
+            <div class="footer-links">
+                <a href="mailto:musajankumaran@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/sajankumaran-mu-867314311" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
